@@ -14,7 +14,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class clients {
+public class Clients {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +23,6 @@ public class clients {
     private String name;
 
     @OneToMany(mappedBy = "clients", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<contacts> contacts = new ArrayList<contacts>();
+    private List<Contacts> contacts = new ArrayList<Contacts>();
 
 }

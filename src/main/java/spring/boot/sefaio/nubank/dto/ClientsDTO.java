@@ -5,13 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class contactDTO {
+public class ClientsDTO {
 
-    private String phoneNumber;
-    private String email;
-    private Long clientId;
+    private String name;
+    private List<ContactDTO> contacts;
+
 }

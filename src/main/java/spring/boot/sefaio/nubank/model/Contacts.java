@@ -1,6 +1,5 @@
 package spring.boot.sefaio.nubank.model;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -13,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class contacts {
+public class Contacts {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,7 +24,7 @@ public class contacts {
     @ManyToOne
     @JoinColumn(name = "clients_id")
     @JsonManagedReference
-    private clients clients;
+    private Clients clients;
 
 
 }

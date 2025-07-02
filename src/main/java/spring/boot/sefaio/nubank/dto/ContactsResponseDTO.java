@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class contactsResponseDTO {
+public class ContactsResponseDTO {
 
     private Long id;
     private String phoneNumber;
